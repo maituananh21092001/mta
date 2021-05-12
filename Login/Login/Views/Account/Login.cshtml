@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<div class="html-rainbow-text" style="text-align: center; margin-top: 20px;">
+    <span style="color:#ff8000">L</span>
+    <span style="color:#ffff00">a</span>
+    <span style="color:#80ff00">u</span>
+    <span style="color:#00ff00">n</span>
+    <span style="color:#00ff80">d</span>
+    <span style="color:#00ffff">r</span>
+    <span style="color:#007fff">y</span>
+    <span style="color: transparent;text-shadow: none;">&nbsp;</span>
+    <span style="color:#7f00ff">O</span>
+    <span style="color:#ff00ff">n</span>
+    <span style="color:#ff0080">l</span>
+    <span style="color:#7f00ff">i</span>
+    <span style="color:#ff0000">n</span>
+    <span style="color:#00ff80">e</span>
+</div>
+<div class="clear-loading spinner">
+    <span></span>
+</div>
+<div class="w3ls-login box box--big">
+    <!-- form starts here -->
+    <form action="Verify" method="post">
+        <div class="agile-field-txt">
+            <label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
+            <input type="text" name="Name" placeholder="Enter User Name" required="" />
+        </div>
+        <div class="agile-field-txt">
+            <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
+            <input type="password" name="Password" placeholder="Enter Password" required="" id="myInput" />
+            <div class="agile_label">
+                <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                <label class="check" for="check3">Show password</label>
+            </div>
+            <div class="agile-right">
+                <a href="Register">forgot password?</a>
+            </div>
+        </div>
+        <!-- script for show password -->
+        <script>
+				function myFunction() {
+					var x = document.getElementById("myInput");
+					if (x.type === "password") {
+						x.type = "text";
+					} else {
+						x.type = "password";
+					}
+				}
+        </script>
+        <!-- //end script -->
+        <input type="submit" value="LOGIN">
+        <input type="submit" value="REGISTRATION">
+    </form>
+</div>
+<!-- //form ends here -->
+<!--copyright-->
